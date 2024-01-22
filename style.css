@@ -1,0 +1,77 @@
+ /*@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'); */
+
+/*
+* {
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"poppins", sans-serif ;
+    
+}
+*/
+.header{
+    /*position:fixed;
+    top:0;
+    left:0;*/
+    
+    
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    z-index:100;
+    
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: lightsalmon;
+    width:100%;
+    padding:20px 100px;
+    background-image: f;
+    position:relative;
+    top:0;
+    left:0;
+}
+
+
+
+
+.navbar a {
+    font-size:18px;
+    font-weight:500;
+    margin-right:50px;
+}
+
+main{
+    
+    
+    
+
+}
+.intro{
+    padding-left: 100px;
+    padding-right: 100px;
+    font-size:larger;
+    font-weight: 1000;
+    color: brown;
+}
+.space{
+    padding-top:25px ;
+    background-color: bisque;
+    background-image: url('flowersbacks.jpg') ;
+    
+    background-repeat: none;
+    display: inline-block;
+}
+.products{
+    padding-top: 70px;
+    display:inline-block;
+}
+.flowers{
+    padding:20px;
+}
+
+
+
+  ```
+  
+
+
