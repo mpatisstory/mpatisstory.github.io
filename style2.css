@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+
+{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'poppins' ,sans-serif;
+
+}
+
+body{
+    background:lightblue;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    min-height:100vh;
+}
+
+.container{
+    position:relative;
+    width:100%;
+    max-width:1200px;
+    min-height:1000px;
+    background:#fff;
+    margin:50px;
+    display:grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow:0 35px 55 rgba(0,0,0,0.1);
+}
+.container .left_side{
+    position:relative;
+    background:#003147;
+    padding:40px;
+}
+
+.profileText{
+    position:relative;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+
+}
+
+.container .right_side{
+    position:relative;
+    background:white;
+    padding:40px;
+    background-image: url(https://melsoftacademy.com/wp-content/uploads/2022/09/Blue-120x120.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+img{
+    border-radius:50%;
+}
+.names{
+    border-radius: 3%;
+    padding;100px
+    margin: 1000px;
+    color:white;
+}
+.details{
+    border-radius;3%
+    color:white;
+}
+p{
+    color:white;
+}
+h2{
+    color:lightseagreen;
+}
