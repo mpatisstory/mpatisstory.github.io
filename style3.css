@@ -1,0 +1,436 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+/* navbar styling */
+nav {
+  background-color: black;
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: white;
+}
+
+.content {
+  padding: 30px;
+}
+/* tours section styling  */
+.upcoming-tours {
+  padding: 20px;
+  width: 100%;
+  text-align: center;
+  background-image: url('background2.jpg');
+  background-size: cover;
+  border-bottom: 2px solid #333;
+}
+
+.section-heading {
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ccc;
+  padding: 5px;
+  width: 50vh;
+  margin: auto;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.subsection-heading {
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.carousel {
+  position: relative;
+  max-width: 100%;
+  overflow: hidden;   
+}
+
+.cards {
+  display: flex;
+  justify-content: center;
+  transition: transform 0.5s ease-in-out;
+}
+
+.card {
+  width: 300px;
+  height: 350px;
+  margin-right: 20px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  display: none;
+  background-color: #333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.card img {
+  width: 100%;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.card-content {
+  margin-top: 10px;
+  padding: 10px;
+  color: #ccc;
+}
+
+.card-content h4 {
+  margin: 0;
+  font-size: 18px;
+}
+
+.card-content p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.indicators {
+  position: absolute;
+  bottom: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+label {
+  cursor: pointer;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: white;
+  margin: 0 5px;
+}
+
+input[type="radio"] {
+  display: none;
+}
+
+input[type="radio"]:checked + label {
+  background-color: #333;
+}
+
+#tour1:checked ~ .cards #card1,
+#tour2:checked ~ .cards #card2,
+#tour3:checked ~ .cards #card3,
+#tour4:checked ~ .cards #card4,
+#tour5:checked ~ .cards #card5,
+#tour6:checked ~ .cards #card6,
+#tour7:checked ~ .cards #card7 {
+  display: block;
+}
+
+/* Discography styling */
+
+.discography {
+  padding: 20px;
+  background-color: #a2a8d3;
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+.discography h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: #ccc;
+  padding: 5px;
+  width: 50vh;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.discography h3 {
+  text-align: center;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+.disco-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.disco-card {
+  margin: 10px;
+  width: 250px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: box-shadow 0.3s ease;
+}
+
+.disco-card:hover {
+  box-shadow: 0 8px 16px #ccc;
+}
+
+.disco-card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.disco-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.disco-card:hover .overlay {
+  opacity: 1;
+}
+
+@media screen and (max-width: 768px) {
+  .card {
+      width: 90%;
+  }
+}
+
+/* about us styling section  */
+
+.about-us {
+  padding: 20px;
+  background-color: white;
+}
+
+.aboutHeading {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+  background-color: red;
+  padding: 5px;
+  width: 50vh;
+  margin: auto;
+  margin-bottom: 20px;
+  border: 1px solid #333;
+  border-radius: 12px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.members {
+  width: 10px;
+  height: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.about-card {
+  margin: 10px;
+  width: 250px;
+  border: 3px solid #333;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+  transition: box-shadow 0.3s ease;
+}
+
+.about-card:hover {
+  box-shadow: 0 8px 16px #ccc;
+}
+
+.about-card img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  
+}
+
+.about-card .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 20px;
+  box-sizing: border-box;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.about-card:hover .overlay {
+  opacity: 1;
+}
+
+.about-content-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-start;
+  max-width: 800px;
+  max-width: 800px;
+}
+
+.image-container {
+  flex: 1;
+  margin-right: 20px; 
+}
+
+.text-container {
+  color: white;
+  font-size: large;
+  flex: 2;
+}
+
+.text-container p {
+  margin: 0; 
+}
+
+ {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 10px;
+  border: 3px solid #333;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+}
+
+.awards-container {
+  color: white;
+  flex: 1;
+  margin-right: 20px;
+  margin-top: 10px;
+}
+
+.image-container {
+  margin-top: 10px;
+  flex: 1;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-bottom: 10px;
+}
+
+#img{
+    width:210px;
+    height:400px;
+    border-radius: 32%;
+    padding-inline:50px;
+    padding-top: 20px;
+    
+  
+  }
+    
+
+
+.about {
+    
+    padding-bottom: ;
+  }
+
+  
+
+  }
+  #pic{
+    border-radius: 25%;
+    width:40%;
+    padding-right:90px ;}
+    
+
+#picture{
+    width:35%;
+    border-radius: 25%;
+    padding-left: 25px;
+    padding-right:90px;
+}
+#p1{
+    padding-left: px;
+    padding-top: px;
+    font-size: 24px;
+    font-weight: bold;*
+}
+.award{
+  padding-right: 50px;
+}
+  body{
+    background-image: url('background5.jpg');/*
+    background-size: cover;
+    background-repeat: no-repeat;*/
+    
+  }
+  .bio{
+    color: aliceblue;
+    padding-top: 40px;
+    
+  }
+  .awa{
+    color: #e0e0e0;
+  }
+  
+  
+  .navbar{
+    color:white;
+    display: flex;
+    padding-right:55px;
+  
+  } 
+  li{
+    padding-right:300px;
+  }
+  
