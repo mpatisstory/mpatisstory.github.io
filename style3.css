@@ -409,9 +409,9 @@ li {
   padding-right: 50px;
 }
   body{
-    background-image: url('background5.jpg');/*
+    background-image: url('background5.jpg');
     background-size: cover;
-    background-repeat: no-repeat;*/
+    background-repeat: no-repeat;
     
   }
   .bio{
