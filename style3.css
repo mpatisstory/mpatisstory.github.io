@@ -411,6 +411,7 @@ li {
     background-image: url('background5.jpg');
     
     background-repeat: no-repeat;
+    background-size:cover;
     
   }
   .bio{
